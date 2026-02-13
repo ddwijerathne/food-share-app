@@ -24,11 +24,6 @@ export default async function Home() {
 
   return (
     <main className="p-10 min-h-screen bg-black text-white">
-      <h1 className="text-3xl font-bold mb-8 text-center">Shared Food</h1>
-      
-      {/* 1. Added 'max-w-7xl' and 'mx-auto' to center the whole grid
-          2. Changed grid-cols-3 to grid-cols-4 for smaller cards on large screens
-      */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {foodItems?.map((item) => (
           <div key={item.id} className="bg-[#f8f9fa] text-black rounded-3xl overflow-hidden shadow-lg flex flex-col hover:scale-[1.02] transition-transform duration-200">
