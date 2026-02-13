@@ -34,14 +34,12 @@ export default async function Home() {
           <div key={item.id} className="bg-[#f8f9fa] text-black rounded-3xl overflow-hidden shadow-lg flex flex-col hover:scale-[1.02] transition-transform duration-200">
             
             {/* Square Image Container */}
-            <div className="relative w-full aspect-square bg-gray-200">
+            <div className="w-full aspect-square overflow-hidden bg-gray-200">
               {item.image_url ? (
-                <Image 
+                <img 
                   src={item.image_url} 
                   alt={item.heading || 'Food image'} 
-                  fill 
-                  className="object-cover"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 33vw, 25vw"
+                  className="w-full h-full object-cover"
                 />
               ) : (
                 <div className="flex items-center justify-center h-full text-gray-400">
