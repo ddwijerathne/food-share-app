@@ -1,6 +1,5 @@
 import { createClient } from '@/utils/supabase/server'
-import Image from 'next/image' // Import the Next.js Image component
-
+import Image from 'next/image'
 type FoodItem = {
   id: string
   heading: string | null
@@ -29,12 +28,14 @@ export default async function Home() {
           <div key={item.id} className="bg-[#f8f9fa] text-black rounded-3xl overflow-hidden shadow-lg flex flex-col hover:scale-[1.02] transition-transform duration-200">
             
             {/* Square Image Container */}
-            <div className="w-full aspect-square overflow-hidden bg-gray-200">
+            <div className="relative w-full aspect-square overflow-hidden bg-gray-200">
               {item.image_url ? (
-                <img 
+                <Image 
                   src={item.image_url} 
                   alt={item.heading || 'Food image'} 
-                  className="w-full h-full object-cover"
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 25vw"
+                  className="object-cover"
                 />
               ) : (
                 <div className="flex items-center justify-center h-full text-gray-400">
