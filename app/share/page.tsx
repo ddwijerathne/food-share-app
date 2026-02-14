@@ -1,5 +1,5 @@
 'use client'
-
+import Image from 'next/image'
 import { useState } from 'react'
 import { shareFood } from '../actions/food-actions'
 
@@ -81,12 +81,12 @@ export default function SharePage() {
           </div>
         </form>
 
-        {/* Right Side: Professional Square Preview */}
+        {/* Right Side */}
         <div className="w-full md:w-[400px] flex flex-col gap-4">
            <label className="text-sm font-semibold uppercase tracking-wider text-gray-400">Live Preview</label>
            <div className="relative aspect-square w-full bg-white/5 rounded-[2rem] overflow-hidden border border-white/10 flex items-center justify-center border-dashed">
             {preview ? (
-              <img 
+              <Image 
                 src={preview} 
                 alt="Preview" 
                 className="w-full h-full object-cover animate-in fade-in zoom-in duration-300" 
