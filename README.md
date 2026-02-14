@@ -36,7 +36,7 @@ This project is built using "Bleeding Edge" technologies:
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/ddwijerathne/food-share-app.git](https://github.com/your-username/food-share-app.git)
+git clone [https://github.com/ddwijerathne/food-share-app.git](https://github.com/ddwijerathne/food-share-app.git)
 cd food-share-app
 
 ```
@@ -65,8 +65,7 @@ npm run dev
 
 ```
 
-Open [http://localhost:3000](https://www.google.com/search?q=http://localhost:3000) to view the application.
-
+Open [http://localhost:3000](http://localhost:3000) to view the application.
 ---
 
 ## 📂 Project Structure
@@ -97,10 +96,4 @@ This project is open-source and available under the [MIT License](https://www.go
 
 ## 👨‍💻 Author
 
-**Your Name** *Full Stack Developer* [GitHub](https://www.google.com/search?q=https://github.com/your-username) | [LinkedIn](https://linkedin.com/in/your-profile)
-
-```
-
-
-
----
+**Daksitha Wijerathne** *Full Stack Developer* [GitHub](https://github.com/ddwijerathne) | [LinkedIn](https://www.linkedin.com/in/dhanuja-wijerathne/)
