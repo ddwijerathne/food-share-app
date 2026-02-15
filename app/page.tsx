@@ -1,5 +1,6 @@
 import { createClient } from '@/utils/supabase/server'
 import Image from 'next/image'
+import Link from 'next/link'
 type FoodItem = {
   id: string
   heading: string | null
@@ -53,9 +54,11 @@ export default async function Home() {
                 <span className="text-xl font-bold text-green-600">
                   ${item.price?.toFixed(2) || '0.00'}
                 </span>
-                <button className="bg-black text-white px-4 py-1.5 rounded-full text-xs font-medium hover:bg-gray-800 transition-colors">
-                  View
-                </button>
+                <Link href={`/food/${item.id}`}>
+                  <button className="bg-black text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-800 transition">
+                    View
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
